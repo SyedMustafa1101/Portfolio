@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Mustafa Ahmad — Frontend Developer &amp; Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description"
+    content="Portfolio of Jordan Rae — product design and front-end development. Selected projects, skills, and contact." />
+  <meta property="og:title" content="Jordan Rae — Product Designer & Developer" />
+  <meta property="og:description"
+    content="Product design and front-end development. Selected projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+
+  <!--
+  ============================================================
+  JORDAN RAE — PORTFOLIO TEMPLATE
+  ============================================================
+  Inspired by the layout of Framer's "Shiro" template, rebuilt
+  from scratch as a plain HTML/CSS/JS file (no build step —
+  just open it, or upload it anywhere that hosts static files).
+
+  WHERE TO START — search for "EDIT:" comments, there's one at
+  every spot people usually personalize first:
+    1. Your name, title & tagline      → EDIT: HERO
+    2. Your bio                        → EDIT: ABOUT
+    3. Your projects (shown twice —    → EDIT: WORK CARDS
+       once as cards, once with more      EDIT: PROJECT DATA
+       detail for the popup)
+    4. Your skills & tools             → EDIT: SKILLS
+    5. Your email & social links       → EDIT: CONTACT
+    6. Colors & fonts                  → EDIT: THEME TOKENS
+
+  There's no "Experience" section on purpose — add one later
+  the same way the other sections are built, whenever you have
+  roles to list.
+  ============================================================
+-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+     NAV
+     ============================================================ -->
+  <header class="nav" id="siteNav">
+    <div class="container nav-inner">
+      <!-- EDIT: your name / wordmark -->
+      <a href="#" class="nav-logo">Syed Mustafa Ahmad</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4.2" />
+            <path
+              d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" />
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn-primary">Let's talk</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary">Let's talk</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============================================================
+       HERO — EDIT: HERO — your name, role, and intro live here
+       ============================================================ -->
+    <section class="hero">
+      <div class="hero-aura" aria-hidden="true"></div>
+      <span class="crosshair tl" aria-hidden="true">+</span>
+      <span class="crosshair tr" aria-hidden="true">+</span>
+      <div class="container hero-inner">
+        <span class="badge" data-reveal>
+          <span class="dot" aria-hidden="true"></span>
+          Open to new opportunities
+        </span>
+        <h1 data-reveal>I'm <span class="accent-text">Mustafa</span> — A Software Engineer building digital solutions
+          that make an impact.</h1>
+        <p class="lede" data-reveal>Frontend developer focused on creating fast, accessible, and visually engaging
+          websites.</p>
+        <div class="hero-actions" data-reveal>
+          <a href="#work" class="btn btn-primary">View my work →</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="scroll-cue">
+          <span class="line" aria-hidden="true"></span>
+          Scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       MARQUEE — swap these for whatever describes you
+       ============================================================ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span><em>✦</em>UI/UX Design<em>✦</em>Front-End Development<em>✦</em>Design Systems<em>✦</em>Rapid
+          Prototyping<em>✦</em>JavaScript<em>✦</em>Framer<em>✦</em>CSS<em>✦</em>HTML5<em>✦</em>Git &amp;
+          Github<em>✦</em>Always Learning</span>
+        <span><em>✦</em>UI/UX Design<em>✦</em>Front-End Development<em>✦</em>Design Systems<em>✦</em>Rapid
+          Prototyping<em>✦</em>React &amp; JavaScript<em>✦</em>Webflow &amp; Framer<em>✦</em>Always Learning</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+       WORK — EDIT: WORK CARDS — swap images/text for your projects.
+       Each card's extra detail (for the popup) lives further down
+       in the JS at the bottom of the page, inside the `projects`
+       object — EDIT: PROJECT DATA
+       ============================================================ -->
+    <section id="work" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">( 01 ) — Selected Work</span>
+          <h2 data-reveal>A few projects I'm proud of.</h2>
+          <p data-reveal>A mix of personal builds, academic projects, and one real client brief — every one taught me
+            something new. More on the way.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <button class="project-card featured" data-project="lumen" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Lumen">
+            <div class="project-cover">
+              <svg viewBox="0 0 400 300" aria-hidden="true">
+                <rect width="400" height="300" fill="var(--accent-soft)" />
+                <circle cx="150" cy="150" r="115" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".35" />
+                <circle cx="150" cy="150" r="82" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".55" />
+                <circle cx="150" cy="150" r="48" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".75" />
+                <circle cx="150" cy="150" r="16" fill="var(--accent)" />
+                <circle cx="320" cy="65" r="4" fill="var(--ink)" opacity=".35" />
+                <circle cx="345" cy="230" r="3" fill="var(--ink)" opacity=".25" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-head">
+                <h3>Lumen</h3>
+                <span class="project-year">2026</span>
+              </div>
+              <p class="project-tagline">A design system and component library built for consistency at scale.</p>
+              <div class="project-tags"><span>Design Systems</span><span>UI Kit</span></div>
+              <span class="project-link">View project →</span>
+            </div>
+          </button>
+
+          <button class="project-card" data-project="kestrel" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Kestrel">
+            <div class="project-cover">
+              <svg viewBox="0 0 400 300" aria-hidden="true">
+                <rect width="400" height="300" fill="var(--accent-soft)" />
+                <path d="M40 220 L180 90 L220 140 L360 60" fill="none" stroke="var(--accent)" stroke-width="2"
+                  opacity=".65" />
+                <path d="M40 252 L190 132 L230 176 L370 102" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".3" />
+                <circle cx="360" cy="60" r="6" fill="var(--accent)" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-head">
+                <h3>Kestrel</h3>
+                <span class="project-year">2025</span>
+              </div>
+              <p class="project-tagline">A booking app concept, designed and coded end-to-end.</p>
+              <div class="project-tags"><span>Mobile App</span><span>Product Design</span></div>
+              <span class="project-link">View project →</span>
+            </div>
+          </button>
+
+          <button class="project-card" data-project="fathom" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Fathom">
+            <div class="project-cover">
+              <svg viewBox="0 0 400 300" aria-hidden="true">
+                <rect width="400" height="300" fill="var(--accent-soft)" />
+                <path d="M0 105 C 60 85, 100 125, 160 105 S 260 85, 320 105 S 400 105,400 105" stroke="var(--accent)"
+                  stroke-width="2" fill="none" opacity=".65" />
+                <path d="M0 155 C 60 135, 100 175, 160 155 S 260 135, 320 155 S 400 155,400 155" stroke="var(--ink)"
+                  stroke-width="1.5" fill="none" opacity=".3" />
+                <path d="M0 200 C 60 182, 100 218, 160 200 S 260 182, 320 200 S 400 200,400 200" stroke="var(--accent)"
+                  stroke-width="1.5" fill="none" opacity=".4" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-head">
+                <h3>Fathom</h3>
+                <span class="project-year">2025</span>
+              </div>
+              <p class="project-tagline">An analytics dashboard that turns dense data into something clear.</p>
+              <div class="project-tags"><span>Web App</span><span>Front-End</span></div>
+              <span class="project-link">View project →</span>
+            </div>
+          </button>
+
+          <button class="project-card" data-project="monarch" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Monarch">
+            <div class="project-cover">
+              <svg viewBox="0 0 400 300" aria-hidden="true">
+                <rect width="400" height="300" fill="var(--accent-soft)" />
+                <rect x="60" y="72" width="66" height="66" rx="8" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".3" />
+                <rect x="148" y="72" width="66" height="66" rx="8" fill="var(--accent)" />
+                <rect x="236" y="72" width="66" height="66" rx="8" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".3" />
+                <rect x="60" y="160" width="66" height="66" rx="8" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".18" />
+                <rect x="148" y="160" width="66" height="66" rx="8" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".3" />
+                <rect x="236" y="160" width="66" height="66" rx="8" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".18" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-head">
+                <h3>Monarch</h3>
+                <span class="project-year">2025</span>
+              </div>
+              <p class="project-tagline">A storefront redesign focused on a calmer path to checkout.</p>
+              <div class="project-tags"><span>E-Commerce</span><span>Design &amp; Build</span></div>
+              <span class="project-link">View project →</span>
+            </div>
+          </button>
+
+          <button class="project-card" data-project="vantage" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Vantage">
+            <div class="project-cover">
+              <svg viewBox="0 0 400 300" aria-hidden="true">
+                <rect width="400" height="300" fill="var(--accent-soft)" />
+                <rect x="70" y="45" width="260" height="210" fill="none" stroke="var(--ink)" stroke-width="1.5"
+                  opacity=".3" transform="rotate(-4 200 150)" />
+                <rect x="100" y="70" width="220" height="170" fill="none" stroke="var(--accent)" stroke-width="2"
+                  transform="rotate(3 200 150)" />
+                <circle cx="200" cy="150" r="5" fill="var(--accent)" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-head">
+                <h3>Vantage</h3>
+                <span class="project-year">2024</span>
+              </div>
+              <p class="project-tagline">A photographer's site — my first real client-style brief.</p>
+              <div class="project-tags"><span>Web Design</span><span>Webflow</span></div>
+              <span class="project-link">View project →</span>
+            </div>
+          </button>
+
+        </div>
+
+        <div class="work-more" data-reveal>
+          <p>More projects are always in progress — check back soon, or ask and I'll walk you through what I'm building.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       ABOUT — EDIT: ABOUT — no experience/timeline section, as
+       requested. Add one later by copying the pattern used in
+       the Work section above (an eyebrow + heading + a repeating
+       block per item).
+       ============================================================ -->
+    <section id="about" class="section-pad">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <div class="about-photo-placeholder">
+            <span class="jr-mono" aria-hidden="true"></span>
+            <span class="photo-note">Swap this card for your photo</span>
+          </div>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">( 02 ) — About</span>
+          <h2 data-reveal style="margin-bottom:1.4rem;">A bit about me.</h2>
+          <p data-reveal>I'm a Software Engineering student passionate about building modern, responsive, and
+            user-friendly digital experiences. I enjoy turning ideas into functional websites and applications using
+            HTML, CSS, JavaScript, Java, Bootstrap, WordPress, and WooCommerce, while also creating clean and engaging
+            designs with Figma and Canva.
+
+            Through academic and personal projects, I've developed a strong foundation in front-end development, UI
+            design, and problem-solving. I'm constantly learning new technologies, refining my skills, and exploring
+            best practices to write clean, efficient, and maintainable code. I'm currently seeking internship and
+            freelance opportunities where I can contribute, collaborate, and continue growing as a software developer.
+          </p>
+          <p data-reveal>Right now, I'm looking for my first real opportunity — an internship, a junior role, or a
+            freelance project — somewhere I can keep learning fast and actually contribute from day one.</p>
+          <div class="about-stats" data-reveal>
+            <div>
+              <span class="stat-num">12</span>
+              <span class="stat-label">Projects built</span>
+            </div>
+            <div>
+              <span class="stat-num">6</span>
+              <span class="stat-label">Core tools &amp; languages</span>
+            </div>
+            <div>
+              <span class="stat-num">1</span>
+              <span class="stat-label">Goal: my first opportunity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SKILLS — EDIT: SKILLS
+       ============================================================ -->
+    <section id="skills" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">( 03 ) — Skills</span>
+          <h2 data-reveal>What I bring to the table.</h2>
+          <p data-reveal>No professional experience yet — but real, practiced skills from building things that didn't
+            exist before I made them.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-reveal>
+            <span class="skill-index">01</span>
+            <h3>UI/UX Design</h3>
+            <p>Wireframes, user flows, and interfaces built around how people actually behave — not just how they look
+              in a mockup.</p>
+          </div>
+          <div class="skill-card" data-reveal>
+            <span class="skill-index">02</span>
+            <h3>Front-End Development</h3>
+            <p>Turning a design file into real, responsive code — HTML, CSS, JavaScript, and React.</p>
+          </div>
+          <div class="skill-card" data-reveal>
+            <span class="skill-index">03</span>
+            <h3>Design Systems</h3>
+            <p>Reusable components and clear rules, so a product can scale without losing consistency.</p>
+          </div>
+          <div class="skill-card" data-reveal>
+            <span class="skill-index">04</span>
+            <h3>Rapid Prototyping</h3>
+            <p>Getting from a rough idea to something clickable and testable — quickly.</p>
+          </div>
+        </div>
+
+        <div class="tools-row" data-reveal>
+          <span class="tools-label">Tools &amp; languages I reach for</span>
+          <div class="tools-chips">
+            <span>Figma</span><span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>Canva</span><span>Webflow</span><span>Framer</span><span>Git &amp;
+              GitHub</span><span>Notion</span><span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CONTACT — EDIT: CONTACT — your real email + social links
+       ============================================================ -->
+    <section id="contact" class="section-pad">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">( 04 ) — Contact</span>
+          <h2 data-reveal>Let's build something worth shipping.</h2>
+          <p data-reveal>I'm currently open to internships, junior roles, and freelance projects. If you think we'd work
+            well together, send a message — I'd love to hear from you.</p>
+          <p class="contact-direct" data-reveal>Prefer email? Reach me directly at <a
+              href="mailto:hello@jordanrae.dev">syedmustafaahmad@gmail.com</a></p>
+          <div class="social-row" data-reveal>
+            <a href="https://github.com/SyedMustafa1101" target="_blank" > GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/syed-mustafa-74a796333?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank ">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal>
+          <div class="field">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Syed Mustafa Ahmad</a>
+          <p>Frontend Developer &amp; Designer</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Syed Mustafa Ahmad. All rights reserved.</p>
+        <a href="#" class="back-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+     PROJECT MODAL
+     ============================================================ -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">✕</button>
+      <div class="modal-cover" id="modalCover"></div>
+      <div class="modal-body">
+        <div class="modal-meta-row" id="modalYear"></div>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <div class="modal-meta-grid">
+          <div>
+            <span class="modal-label">Role</span>
+            <span id="modalRole"></span>
+          </div>
+          <div>
+            <span class="modal-label">Tools</span>
+            <span id="modalTools"></span>
+          </div>
+        </div>
+        <div class="project-tags" id="modalTags"></div>
+        <div class="modal-actions">
+          <a href="#" class="btn btn-primary">View live ↗</a>
+          <a href="#" class="btn btn-ghost">View code ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ============================================================
+    // NAV — background/blur once the page scrolls
+    // ============================================================
+    const nav = document.getElementById('siteNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ============================================================
+    // MOBILE MENU
+    // ============================================================
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('is-open');
+      mobileMenu.classList.toggle('is-open', isOpen);
+      menuToggle.classList.toggle('is-open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      menuToggle.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }));
+
+    // ============================================================
+    // THEME TOGGLE — light/dark (session only; artifacts can't use
+    // localStorage, so this resets on reload — that's expected)
+    // ============================================================
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    themeToggle.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      themeToggle.setAttribute('aria-pressed', String(next === 'dark'));
+    });
+
+    // ============================================================
+    // SCROLL REVEAL
+    // ============================================================
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('in-view'), i * 40);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('in-view'));
+    }
+
+    // ============================================================
+    // PROJECT MODAL — EDIT: PROJECT DATA
+    // Add/remove entries here to match the cards in the Work
+    // section above. Each key must match that card's
+    // data-project="..." attribute.
+    // ============================================================
+    const projects = {
+      lumen: {
+        role: 'Design & Front-End',
+        tools: 'Figma, React, Storybook',
+        description: "Lumen started as a way to stop rebuilding the same button five different ways. It's a small design system — a shared set of components, spacing rules, and color tokens — built so a product can grow without the interface falling apart. I designed every component in Figma, then built and documented it in React."
+      },
+      kestrel: {
+        role: 'Product Design & Prototyping',
+        tools: 'Figma, HTML/CSS/JS',
+        description: "Kestrel is a concept booking app for small studios and personal trainers. I designed the full flow — browse, book, pay, manage — then built a working front-end prototype so the interactions felt real instead of theoretical. The focus was speed: booking a slot in three taps or less."
+      },
+      fathom: {
+        role: 'Design & Front-End',
+        tools: 'Figma, React, Chart.js',
+        description: "Fathom turns a spreadsheet of raw numbers into a dashboard people actually want to open. I designed the layout around the three questions users asked most, then built it as a responsive front-end with live chart updates. Less clutter, more signal."
+      },
+      monarch: {
+        role: 'Design & Build',
+        tools: 'Figma, HTML/CSS/JS',
+        description: "Monarch is a storefront redesign for a small home-goods brand concept. I rebuilt the product grid, checkout flow, and mobile experience with one goal: fewer steps between looking and buying."
+      },
+      vantage: {
+        role: 'Web Design & Build',
+        tools: 'Webflow',
+        description: "Vantage was my first real client-style brief — a personal site for a photographer friend. She needed something that got out of the way and let the photos do the talking, so I designed and built the whole thing with a focus on fast load times and a clean, gallery-first layout."
+      }
+    };
+
+    const modal = document.getElementById('projectModal');
+    const modalClose = document.getElementById('modalClose');
+    let lastFocused = null;
+
+    function openModal(card) {
+      const id = card.dataset.project;
+      const data = projects[id];
+      if (!data) return;
+      document.getElementById('modalCover').innerHTML = card.querySelector('.project-cover').innerHTML;
+      document.getElementById('modalTitle').textContent = card.querySelector('h3').textContent;
+      document.getElementById('modalYear').textContent = card.querySelector('.project-year').textContent;
+      document.getElementById('modalDescription').textContent = data.description;
+      document.getElementById('modalRole').textContent = data.role;
+      document.getElementById('modalTools').textContent = data.tools;
+      document.getElementById('modalTags').innerHTML = card.querySelector('.project-tags').innerHTML;
+      lastFocused = document.activeElement;
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      modalClose.focus();
+    }
+    function closeModal() {
+      modal.hidden = true;
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    }
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => openModal(card));
+    });
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+    // ============================================================
+    // CONTACT FORM — opens the visitor's email client with the
+    // message pre-filled (works without any backend/server).
+    // EDIT: replace the address below with your real email.
+    // ============================================================
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('cName').value.trim();
+      const email = document.getElementById('cEmail').value.trim();
+      const message = document.getElementById('cMessage').value.trim();
+      const subject = encodeURIComponent('Portfolio inquiry from ' + name);
+      const body = encodeURIComponent(message + '\n\n—\n' + name + '\n' + email);
+      window.location.href = 'mailto:hello@jordanrae.dev?subject=' + subject + '&body=' + body;
+    });
+
+    // ============================================================
+    // FOOTER YEAR
+    // ============================================================
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
