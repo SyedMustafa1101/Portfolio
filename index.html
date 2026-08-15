@@ -19,7 +19,7 @@
   />
   <meta
     property="og:image"
-    content="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/SMA-pic.png"
+    content="https://github.com/SyedMustafa1101/Portfolio.git/SMA-pic.png"
   />
   <meta
     property="og:image:secure_url"
@@ -164,23 +164,15 @@
           <button class="project-card featured" data-project="lumen" data-reveal aria-haspopup="dialog"
             aria-label="View project: Lumen">
             <div class="project-cover">
-              <svg viewBox="0 0 400 300" aria-hidden="true">
-                <rect width="400" height="300" fill="var(--accent-soft)" />
-                <circle cx="150" cy="150" r="115" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".35" />
-                <circle cx="150" cy="150" r="82" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".55" />
-                <circle cx="150" cy="150" r="48" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".75" />
-                <circle cx="150" cy="150" r="16" fill="var(--accent)" />
-                <circle cx="320" cy="65" r="4" fill="var(--ink)" opacity=".35" />
-                <circle cx="345" cy="230" r="3" fill="var(--ink)" opacity=".25" />
-              </svg>
+             <img height="100%" src="./images/SMS SS.PNG" alt="">
             </div>
             <div class="project-info">
               <div class="project-head">
-                <h3>Lumen</h3>
+                <h3>Smart Super Market Management System</h3>
                 <span class="project-year">2026</span>
               </div>
-              <p class="project-tagline">A design system and component library built for consistency at scale.</p>
-              <div class="project-tags"><span>Design Systems</span><span>UI Kit</span></div>
+              <p class="project-tagline">A database-driven supermarket management system designed to streamline inventory, sales, and daily operations.</p>
+              <div class="project-tags"><span>MySQL</span><span>JDBC</span></div>
               <span class="project-link">View project →</span>
             </div>
           </button>
@@ -188,22 +180,17 @@
           <button class="project-card" data-project="kestrel" data-reveal aria-haspopup="dialog"
             aria-label="View project: Kestrel">
             <div class="project-cover">
-              <svg viewBox="0 0 400 300" aria-hidden="true">
-                <rect width="400" height="300" fill="var(--accent-soft)" />
-                <path d="M40 220 L180 90 L220 140 L360 60" fill="none" stroke="var(--accent)" stroke-width="2"
-                  opacity=".65" />
-                <path d="M40 252 L190 132 L230 176 L370 102" fill="none" stroke="var(--ink)" stroke-width="1.5"
-                  opacity=".3" />
-                <circle cx="360" cy="60" r="6" fill="var(--accent)" />
-              </svg>
+              <br>
+              <br>
+              <img src="./images/SAMS SS.jpeg" alt="">
             </div>
             <div class="project-info">
               <div class="project-head">
-                <h3>Kestrel</h3>
-                <span class="project-year">2025</span>
+                <h3>Smart Airport Management System</h3>
+                <span class="project-year">2026</span>
               </div>
-              <p class="project-tagline">A booking app concept, designed and coded end-to-end.</p>
-              <div class="project-tags"><span>Mobile App</span><span>Product Design</span></div>
+              <p class="project-tagline">An operating system–focused airport management system designed to streamline flight operations, passenger handling, and airport resources.</p>
+              <div class="project-tags"><span>FCFS</span><span>SJF</span><span>Priority</span><span>Round Robin</span></div>
               <span class="project-link">View project →</span>
             </div>
           </button>
@@ -303,7 +290,7 @@
       <div class="container about-grid">
         <div class="about-visual" data-reveal>
           <div class="about-photo-placeholder">
-            <img src="SMA-pic.png" alt="Syed Mustafa Ahmad portrait" class="about-photo" loading="lazy" decoding="async" />
+            <img src="./images/SMA-pic.png" alt="Syed Mustafa Ahmad portrait" class="about-photo" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="about-copy">
@@ -469,12 +456,21 @@
           </div>
         </div>
         <div class="project-tags" id="modalTags"></div>
-        <div class="modal-actions">
-          <a href="#" class="btn btn-primary">View live ↗</a>
-          <a href="#" class="btn btn-ghost">View code ↗</a>
+        <div class="modal-actions" id="modalActions">
+          <a href="#" class="btn btn-ghost" id="modalGithubBtn" target="_blank" rel="noopener">View on GitHub ↗</a>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- ============================================================
+     SCREENSHOT LIGHTBOX — opens on top of the project modal to
+     show that project's cover image at full size
+     ============================================================ -->
+  <div class="lightbox-overlay" id="screenshotLightbox" role="dialog" aria-modal="true"
+    aria-label="Project screenshot" hidden>
+    <button class="modal-close" id="lightboxClose" aria-label="Close screenshot">✕</button>
+    <div class="lightbox-frame" id="lightboxFrame"></div>
   </div>
 
   <script>
@@ -541,36 +537,50 @@
     // section above. Each key must match that card's
     // data-project="..." attribute.
     // ============================================================
+    // Add your real GitHub repo link here as you get each one live —
+    // leave it as '' and the "View on GitHub" button hides itself
+    // instead of showing a dead link. "View screenshot" always works,
+    // since it just opens the cover image you already see on the card.
     const projects = {
       lumen: {
-        role: 'Design & Front-End',
-        tools: 'Figma, React, Storybook',
-        description: "Lumen started as a way to stop rebuilding the same button five different ways. It's a small design system — a shared set of components, spacing rules, and color tokens — built so a product can grow without the interface falling apart. I designed every component in Figma, then built and documented it in React."
+        role: 'Group Lead & Full-Stack Developer',
+        tools: 'Java, JavaFX, FXML, MySQL, JDBC, Maven, NetBeans',
+        description: "A database-driven supermarket management system built to simplify product management, inventory tracking, sales, and day-to-day operations. As the group leader, I handled the core development, database design, system architecture, and implementation, turning the project requirements into a functional desktop application with a structured MySQL database.",
+        github: 'https://github.com/SyedMustafa1101/Smart-Super-Market-Management-System.git'
       },
       kestrel: {
-        role: 'Product Design & Prototyping',
-        tools: 'Figma, HTML/CSS/JS',
-        description: "Kestrel is a concept booking app for small studios and personal trainers. I designed the full flow — browse, book, pay, manage — then built a working front-end prototype so the interactions felt real instead of theoretical. The focus was speed: booking a slot in three taps or less."
+        role: 'Team Lead & Java Developer',
+        tools: 'Java, NetBeans, Java Swing',
+        description: "An academic Java-based Smart Airport Management System developed for the Operating Systems course according to the instructor’s given requirements. The project simulates airport operations while implementing multiple CPU scheduling algorithms, including FCFS, SJF, Priority Scheduling, and Round Robin, demonstrating practical concepts of process scheduling and resource management.",
+        github: 'https://github.com/SyedMustafa1101/Smart-Airport-Management-System.git'
       },
       fathom: {
         role: 'Design & Front-End',
         tools: 'Figma, React, Chart.js',
-        description: "Fathom turns a spreadsheet of raw numbers into a dashboard people actually want to open. I designed the layout around the three questions users asked most, then built it as a responsive front-end with live chart updates. Less clutter, more signal."
+        description: "Fathom turns a spreadsheet of raw numbers into a dashboard people actually want to open. I designed the layout around the three questions users asked most, then built it as a responsive front-end with live chart updates. Less clutter, more signal.",
+        github: ''
       },
       monarch: {
         role: 'Design & Build',
         tools: 'Figma, HTML/CSS/JS',
-        description: "Monarch is a storefront redesign for a small home-goods brand concept. I rebuilt the product grid, checkout flow, and mobile experience with one goal: fewer steps between looking and buying."
+        description: "Monarch is a storefront redesign for a small home-goods brand concept. I rebuilt the product grid, checkout flow, and mobile experience with one goal: fewer steps between looking and buying.",
+        github: ''
       },
       vantage: {
         role: 'Web Design & Build',
         tools: 'Webflow',
-        description: "Vantage was my first real client-style brief — a personal site for a photographer friend. She needed something that got out of the way and let the photos do the talking, so I designed and built the whole thing with a focus on fast load times and a clean, gallery-first layout."
+        description: "Vantage was my first real client-style brief — a personal site for a photographer friend. She needed something that got out of the way and let the photos do the talking, so I designed and built the whole thing with a focus on fast load times and a clean, gallery-first layout.",
+        github: ''
       }
     };
 
     const modal = document.getElementById('projectModal');
     const modalClose = document.getElementById('modalClose');
+    const modalScreenshotBtn = document.getElementById('modalScreenshotBtn');
+    const modalGithubBtn = document.getElementById('modalGithubBtn');
+    const lightbox = document.getElementById('screenshotLightbox');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxFrame = document.getElementById('lightboxFrame');
     let lastFocused = null;
 
     function openModal(card) {
@@ -584,6 +594,10 @@
       document.getElementById('modalRole').textContent = data.role;
       document.getElementById('modalTools').textContent = data.tools;
       document.getElementById('modalTags').innerHTML = card.querySelector('.project-tags').innerHTML;
+
+      modalGithubBtn.href = data.github || '#';
+      modalGithubBtn.style.display = data.github ? '' : 'none';
+
       lastFocused = document.activeElement;
       modal.hidden = false;
       document.body.style.overflow = 'hidden';
@@ -599,7 +613,28 @@
     });
     modalClose.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+    // Screenshot lightbox — reuses whatever is already showing in the
+    // modal's cover strip, just larger. Sits on top of the project
+    // modal rather than replacing it.
+    function openLightbox() {
+      lightboxFrame.innerHTML = document.getElementById('modalCover').innerHTML;
+      lightbox.hidden = false;
+      lightboxClose.focus();
+    }
+    function closeLightbox() {
+      lightbox.hidden = true;
+      modalScreenshotBtn.focus();
+    }
+    modalScreenshotBtn.addEventListener('click', openLightbox);
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      if (!lightbox.hidden) { closeLightbox(); return; }
+      if (!modal.hidden) closeModal();
+    });
 
     // ============================================================
     // CONTACT FORM — opens the visitor's email client with the
