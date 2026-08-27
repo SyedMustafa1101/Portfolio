@@ -352,14 +352,19 @@
           <p data-reveal>If you think we'd work
             well together, send a message — I'd love to hear from you.</p>
           <p class="contact-direct" data-reveal>Prefer email? Reach me directly at <a
-              href="mailto:hello@jordanrae.dev">syedmustafaahmad@gmail.com</a></p>
+              href="mailto:syedmustafaahmad786@gmail.com">syedmustafaahmad786@gmail.com</a></p>
           <div class="social-row" data-reveal>
             <a href="https://github.com/SyedMustafa1101" target="_blank" > GitHub ↗</a>
             <a href="https://www.linkedin.com/in/syed-mustafa-74a796333?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank ">LinkedIn ↗</a>
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" data-reveal>
+        <form class="contact-form" action="https://formsubmit.co/syedmustafaahmad786@gmail.com" method="POST" data-reveal>
+          <input type="hidden" name="_subject" value="New portfolio contact form message" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://syedmustafa1101.github.io/Portfolio/#contact" />
+
           <div class="field">
             <label for="cName">Name</label>
             <input type="text" id="cName" name="name" required autocomplete="name" />
@@ -606,20 +611,12 @@
     });
 
     // ============================================================
-    // CONTACT FORM — opens the visitor's email client with the
-    // message pre-filled (works without any backend/server).
-    // EDIT: replace the address below with your real email.
+    // CONTACT FORM — submitted securely through FormSubmit.
+    // No visitor email app is required.
     // ============================================================
-    const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('cName').value.trim();
-      const email = document.getElementById('cEmail').value.trim();
-      const message = document.getElementById('cMessage').value.trim();
-      const subject = encodeURIComponent('Portfolio inquiry from ' + name);
-      const body = encodeURIComponent(message + '\n\n—\n' + name + '\n' + email);
-      window.location.href = 'mailto:hello@jordanrae.dev?subject=' + subject + '&body=' + body;
-    });
+    // The form action above sends submissions to:
+    // syedmustafaahmad@gmail.com
+    // ============================================================
 
     // ============================================================
     // FOOTER YEAR
