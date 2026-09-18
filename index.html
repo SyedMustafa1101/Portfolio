@@ -171,7 +171,23 @@
           <button class="project-card featured" data-project="lumen" data-reveal aria-haspopup="dialog"
             aria-label="View project: Lumen">
             <div class="project-cover">
-             <img height="100%" src="./images/SMS SS.PNG" alt="">
+             <img height="100%" src="./images/VANTA SS.PNG" alt="Vanta">
+            </div>
+            <div class="project-info">
+              <div class="project-head">
+                <h3>VANTA.</h3>
+                <span class="project-year">2026</span>
+              </div>
+              <p class="project-tagline">Premium streetwear. Immersive design. Full-stack commerce.</p>
+              <div class="project-tags"><span>MySQL</span><span>PHP</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Full-Stack</span><span>E-Commerce</span></div>
+              <span class="project-link">View project →</span>
+            </div>
+          </button>
+
+          <button class="project-card" data-project="kestrel" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Kestrel">
+            <div class="project-cover">
+              <img height="100%" width="200%" src="./images/SMS SS.PNG" alt="Smart Super Market Management System">
             </div>
             <div class="project-info">
               <div class="project-head">
@@ -184,8 +200,8 @@
             </div>
           </button>
 
-          <button class="project-card" data-project="kestrel" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Kestrel">
+          <button class="project-card" data-project="fathom" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Fathom">
             <div class="project-cover">
               <img src="./images/SAMS SS.jpg" alt="Smart Airport Management System">
             </div>
@@ -200,8 +216,8 @@
             </div>
           </button>
 
-          <button class="project-card" data-project="fathom" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Fathom">
+          <button class="project-card" data-project="monarch" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Monarch">
             <div class="project-cover">
               <img src="./images/SIw-Chatbot.jpg" alt="Sports Info With Chat Bot">
             </div>
@@ -216,34 +232,18 @@
             </div>
           </button>
 
-          <button class="project-card" data-project="monarch" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Monarch">
+          <button class="project-card" data-project="vantage" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Vantage">
             <div class="project-cover">
               <img src="./images/ExFlo.png" alt="Expense Flow">
             </div>
             <div class="project-info">
               <div class="project-head">
                 <h3>Expense Flow</h3>
-                <span class="project-year">2025</span>
+                <span class="project-year">2024</span>
               </div>
               <p class="project-tagline">Track, organize, and manage your expenses with a simple, modern interface designed to give you better control over your finances.</p>
               <div class="project-tags"><span>Frontend</span><span>UI/UX</span><span>Backend</span></div>
-              <span class="project-link">View project →</span>
-            </div>
-          </button>
-
-          <button class="project-card" data-project="vantage" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Vantage">
-            <div class="project-cover">
-              <img src="./images/ST SS.jpg" alt="Snap Trips">
-            </div>
-            <div class="project-info">
-              <div class="project-head">
-                <h3>Snap Trips</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <p class="project-tagline">Explore More. Travel Better. Create Memories.</p>
-              <div class="project-tags"><span>Front-End</span><span>HTML5 &amp; CSS</span></div>
               <span class="project-link">View project →</span>
             </div>
           </button>
@@ -517,34 +517,34 @@
     // since it just opens the cover image you already see on the card.
     const projects = {
       lumen: {
+        role: 'Full-Stack Developer & Project Designer',
+        tools: 'VS Code, XAMPP, Git, GitHub, phpMyAdmin, Composer',
+        description: "VANTA is a full-stack streetwear e-commerce platform featuring a modern, responsive storefront, product collections and variants, customer accounts, wishlist, cart and checkout, order management, and a complete admin dashboard. Built with PHP, MySQL, JavaScript, HTML, and CSS, with a strong focus on immersive UI, smooth interactions, and real-world e-commerce functionality.",
+        github: 'https://github.com/SyedMustafa1101/VANTA-E-Commerce-Store.git'
+      },
+      kestrel: {
         role: 'Group Lead & Full-Stack Developer',
         tools: 'Java, JavaFX, FXML, MySQL, JDBC, Maven, NetBeans',
         description: "A database-driven supermarket management system built to simplify product management, inventory tracking, sales, and day-to-day operations. As the group leader, I handled the core development, database design, system architecture, and implementation, turning the project requirements into a functional desktop application with a structured MySQL database.",
         github: 'https://github.com/SyedMustafa1101/Smart-Super-Market-Management-System.git'
       },
-      kestrel: {
+      fathom: {
         role: 'Team Lead & Java Developer',
         tools: 'Java, NetBeans, Java Swing',
         description: "An academic Java-based Smart Airport Management System developed for the Operating Systems course according to the instructor’s given requirements. The project simulates airport operations while implementing multiple CPU scheduling algorithms, including FCFS, SJF, Priority Scheduling, and Round Robin, demonstrating practical concepts of process scheduling and resource management.",
         github: 'https://github.com/SyedMustafa1101/Smart-Airport-Management-System.git'
       },
-      fathom: {
+      monarch: {
         role: 'Team Lead & Chat Bot Developer',
         tools: 'Python, Flask, Bootstrap, Figma, Git, GitHub, VS Code',
         description: "Sports Info With Chat Bot is a web-based sports information application that combines sports-related information with an integrated chatbot. Built with Python, Flask, and web technologies, the project demonstrates practical skills in web development, backend programming, chatbot integration, API/data handling, and user interface design.",
         github: 'https://github.com/SyedMustafa1101/Sports-Info-With-Chat-Bot.git'
       },
-      monarch: {
+      vantage: {
         role: 'Solo Developer',
         tools: 'HTML5, Tailwind CSS, JavaScript, npm, VS Code, Git, GitHub',
         description: "Expense Flow is a modern and responsive expense management web application built with HTML, Tailwind CSS, JavaScript and JSON. It features a clean and intuitive interface for managing expenses and was developed as a hands-on project to enhance and polish my frontend development skills.",
         github: 'https://github.com/SyedMustafa1101/Expense-Flow.git'
-      },
-      vantage: {
-        role: 'Solo Developer',
-        tools: 'HTML5, CSS3, Visual Studio Code, Git & GitHub',
-        description: "SnapTrips is my first-ever web development project, a travel and tourism website built with HTML and CSS. It showcases popular destinations through a clean, attractive, and user-friendly interface while helping me strengthen my foundational web development and responsive design skills.",
-        github: 'https://github.com/SyedMustafa1101/Snap-Trips.git'
       }
     };
 
