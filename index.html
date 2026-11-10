@@ -3,61 +3,38 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Syed Mustafa Ahmad — Frontend Developer & Designer</title>
-  <link rel="icon"  href="./images/Favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Mustafa Ahmad — Web Designer &amp; Developer for Fashion &amp; Small Business Brands</title>
+  <link rel="icon" href="./images/Favicon.png">
   <link rel="stylesheet" href="style.css" />
 
-  <meta
-    name="description"
-    content="Portfolio of Syed Mustafa Ahmad — Frontend Developer & Designer. Selected projects, skills, and contact."
-  />
+  <meta name="description"
+    content="I design and build fast, mobile-first websites and online stores for fashion brands and small businesses. See the VANTA e-commerce case study and get a free homepage review." />
 
-  <meta property="og:title" content="Syed Mustafa Ahmad — Frontend Developer & Designer" />
-  <meta
-    property="og:description"
-    content="Frontend Developer & Designer. Selected projects, skills, and contact information."
-  />
-  <meta
-    property="og:image"
-    content="https://github.com/SyedMustafa1101/Portfolio.git/SMA-pic.png"
-  />
-  <meta
-    property="og:image:secure_url"
-    content="https://github.com/SyedMustafa1101/Portfolio.git/SMA-pic.png"
-  />
-  <meta property="og:image:width" content
-  ="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta
-    property="og:url"
-    content="https://github.com/SyedMustafa1101/Portfolio.git"
-  />
+  <meta property="og:title" content="Syed Mustafa Ahmad — Websites & Online Stores That Turn Visitors Into Customers" />
+  <meta property="og:description"
+    content="Web designer & full-stack developer. Custom websites and e-commerce stores for fashion brands and small businesses." />
+  <meta property="og:image" content="https://syedmustafa1101.github.io/Portfolio/images/SMA-pic.jpg" />
+  <meta property="og:image:secure_url" content="https://syedmustafa1101.github.io/Portfolio/images/SMA-pic.jpg" />
+  <meta property="og:url" content="https://syedmustafa1101.github.io/Portfolio/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Syed Mustafa Ahmad — Frontend Developer & Designer" />
-  <meta
-    name="twitter:description"
-    content="Frontend Developer & Designer. Selected projects, skills, and contact information."
-  />
-  <meta
-    name="twitter:image"
-    content="https://github.com/SyedMustafa1101/Portfolio.git/SMA-pic.png"
-  />
+  <meta name="twitter:title"
+    content="Syed Mustafa Ahmad — Websites & Online Stores That Turn Visitors Into Customers" />
+  <meta name="twitter:description"
+    content="Web designer & full-stack developer. Custom websites and e-commerce stores for fashion brands and small businesses." />
+  <meta name="twitter:image" content="https://syedmustafa1101.github.io/Portfolio/images/SMA-pic.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
+  <link rel="preload" as="image" href="./images/VANTA SS.PNG">
   <link rel="preload" as="image" href="./images/ExFlo.png">
-  <link rel="preload" as="image" href="./images/SAMS SS.jpg">
   <link rel="preload" as="image" href="./images/SIw-Chatbot.jpg">
   <link rel="preload" as="image" href="./images/SMA-pic.jpg">
-  <link rel="preload" as="image" href="./images/SMS SS.PNG">
-  <link rel="preload" as="image" href="./images/ST SS.jpg">
 </head>
 
 <body>
@@ -70,13 +47,12 @@
      ============================================================ -->
   <header class="nav" id="siteNav">
     <div class="container nav-inner">
-      <!-- EDIT: your name / wordmark -->
       <a href="#" class="nav-logo">Syed Mustafa Ahmad</a>
 
       <nav class="nav-links" aria-label="Primary">
         <a href="#work">Work</a>
+        <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -92,7 +68,7 @@
             <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" />
           </svg>
         </button>
-        <a href="#contact" class="btn btn-primary">Let's talk</a>
+        <a href="#contact" class="btn btn-primary">Get a free review</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
           aria-controls="mobileMenu">
           <span></span><span></span><span></span>
@@ -103,16 +79,16 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="#work">Work</a>
+    <a href="#services">Services</a>
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
-    <a href="#contact" class="btn btn-primary">Let's talk</a>
+    <a href="#contact" class="btn btn-primary">Get a free review</a>
   </div>
 
   <main id="main">
 
     <!-- ============================================================
-       HERO — EDIT: HERO — your name, role, and intro live here
+       HERO — written for clients, not employers
        ============================================================ -->
     <section class="hero">
       <div class="hero-aura" aria-hidden="true"></div>
@@ -121,16 +97,17 @@
       <div class="container hero-inner">
         <span class="badge" data-reveal>
           <span class="dot" aria-hidden="true"></span>
-          Open to new opportunities
+          Available for freelance projects
         </span>
-        <h1 data-reveal>I'm <span class="accent-text">Mustafa</span> — A Software Engineer building digital solutions
-          that make an impact.</h1>
-        <p class="lede" data-reveal>Frontend developer focused on creating fast, accessible, and visually engaging
-          websites.</p>
+        <h1 data-reveal>I build <span class="accent-text">websites &amp; online stores</span> that turn visitors into
+          customers.</h1>
+        <p class="lede" data-reveal>I'm Mustafa — a web designer and full-stack developer helping fashion brands and
+          small businesses launch fast, mobile-first sites that look premium and are easy to run.</p>
         <div class="hero-actions" data-reveal>
-          <a href="#work" class="btn btn-primary">View my work →</a>
-          <a target="_blank" href="Syed Mustafa Ahmad CV.pdf" download class="btn btn-ghost">Download My CV / Resume</a>
+          <a href="#contact" class="btn btn-primary">Get a free homepage review →</a>
+          <a href="#case-study" class="btn btn-ghost">See the VANTA case study</a>
         </div>
+        <p class="hero-note" data-reveal>Replies within 24 hours · Clear quote before any work starts</p>
         <div class="scroll-cue">
           <span class="line" aria-hidden="true"></span>
           Scroll
@@ -139,39 +116,37 @@
     </section>
 
     <!-- ============================================================
-       MARQUEE — swap these for whatever describes you
+       MARQUEE
        ============================================================ -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span><em>✦</em>UI/UX Design<em>✦</em>Front-End Development<em>✦</em>Design Systems<em>✦</em>Rapid
-          Prototyping<em>✦</em>JavaScript<em>✦</em>Framer<em>✦</em>CSS<em>✦</em>HTML5<em>✦</em>Git &amp;
-          Github<em>✦</em>Always Learning</span>
-        <span><em>✦</em>UI/UX Design<em>✦</em>Front-End Development<em>✦</em>Design Systems<em>✦</em>Rapid
-          Prototyping<em>✦</em>React &amp; JavaScript<em>✦</em>Webflow &amp; Framer<em>✦</em>Always Learning</span>
+        <span><em>✦</em>Business Websites<em>✦</em>Online Stores<em>✦</em>Landing Pages<em>✦</em>UI/UX
+          Design<em>✦</em>Mobile-First<em>✦</em>PHP &amp; MySQL<em>✦</em>React &amp; JavaScript<em>✦</em>Framer &amp;
+          Webflow<em>✦</em>Fast Delivery</span>
+        <span><em>✦</em>Business Websites<em>✦</em>Online Stores<em>✦</em>Landing Pages<em>✦</em>UI/UX
+          Design<em>✦</em>Mobile-First<em>✦</em>PHP &amp; MySQL<em>✦</em>React &amp; JavaScript<em>✦</em>Framer &amp;
+          Webflow<em>✦</em>Fast Delivery</span>
       </div>
     </div>
 
     <!-- ============================================================
-       WORK — EDIT: WORK CARDS — swap images/text for your projects.
-       Each card's extra detail (for the popup) lives further down
-       in the JS at the bottom of the page, inside the `projects`
-       object — EDIT: PROJECT DATAA
+       WORK — best client-style projects first
        ============================================================ -->
     <section id="work" class="section-pad">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">( 01 ) — Selected Work</span>
-          <h2 data-reveal>A few projects I'm proud of.</h2>
-          <p data-reveal>A mix of personal builds, academic project — every project taught me
-            something new. More on the way.</p>
+          <h2 data-reveal>Websites built to sell.</h2>
+          <p data-reveal>A full-stack online store, a polished web app, and a Flask project. Click any project for the
+            details, live demo and code.</p>
         </div>
 
         <div class="work-grid">
 
-          <button class="project-card featured" data-project="lumen" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Lumen">
+          <button class="project-card featured" data-project="vanta" data-reveal aria-haspopup="dialog"
+            aria-label="View project: VANTA">
             <div class="project-cover">
-             <img height="100%" src="./images/VANTA SS.PNG" alt="Vanta">
+              <img height="100%" width="100%" src="./images/VANTA SS.PNG" alt="VANTA streetwear e-commerce store">
             </div>
             <div class="project-info">
               <div class="project-head">
@@ -179,45 +154,32 @@
                 <span class="project-year">2026</span>
               </div>
               <p class="project-tagline">Premium streetwear. Immersive design. Full-stack commerce.</p>
-              <div class="project-tags"><span>MySQL</span><span>PHP</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Full-Stack</span><span>E-Commerce</span></div>
+              <div class="project-tags">
+                <span>E-Commerce</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Admin
+                  Dashboard</span></div>
               <span class="project-link">View project →</span>
             </div>
           </button>
 
-          <button class="project-card" data-project="kestrel" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Kestrel">
+          <button class="project-card" data-project="expenseflow" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Expense Flow">
             <div class="project-cover">
-              <img height="100%" width="200%" src="./images/SMS SS.PNG" alt="Smart Super Market Management System">
+              <img src="./images/ExFlo.png" alt="Expense Flow web app">
             </div>
             <div class="project-info">
               <div class="project-head">
-                <h3>Smart Super Market Management System</h3>
-                <span class="project-year">2026</span>
+                <h3>Expense Flow</h3>
+                <span class="project-year">2024</span>
               </div>
-              <p class="project-tagline">A database-driven supermarket management system designed to streamline inventory, sales, and daily operations.</p>
-              <div class="project-tags"><span>MySQL</span><span>JDBC</span></div>
+              <p class="project-tagline">Track, organize, and manage your expenses with a simple, modern interface
+                designed to give you better control over your finances.</p>
+              <div class="project-tags"><span>Frontend</span><span>UI/UX</span><span>Tailwind CSS</span></div>
               <span class="project-link">View project →</span>
             </div>
           </button>
 
-          <button class="project-card" data-project="fathom" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Fathom">
-            <div class="project-cover">
-              <img src="./images/SAMS SS.jpg" alt="Smart Airport Management System">
-            </div>
-            <div class="project-info">
-              <div class="project-head">
-                <h3>Smart Airport Management System</h3>
-                <span class="project-year">2026</span>
-              </div>
-              <p class="project-tagline">An operating system–focused airport management system designed to streamline flight operations, passenger handling, and airport resources.</p>
-              <div class="project-tags"><span>FCFS</span><span>SJF</span><span>Priority</span><span>Round Robin</span></div>
-              <span class="project-link">View project →</span>
-            </div>
-          </button>
-
-          <button class="project-card" data-project="monarch" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Monarch">
+          <button class="project-card" data-project="sportsinfo" data-reveal aria-haspopup="dialog"
+            aria-label="View project: Sports Info With Chat Bot">
             <div class="project-cover">
               <img src="./images/SIw-Chatbot.jpg" alt="Sports Info With Chat Bot">
             </div>
@@ -226,42 +188,174 @@
                 <h3>Sports Info With Chat Bot</h3>
                 <span class="project-year">2025</span>
               </div>
-              <p class="project-tagline">Your All-in-One Sports Hub for Exploring Information, Asking Questions, and Getting Answers Through an Interactive Chatbot</p>
-              <div class="project-tags"><span>Python</span><span>Front-End</span><span>Chat Bot</span></div>
-              <span class="project-link">View project →</span>
-            </div>
-          </button>
-
-          <button class="project-card" data-project="vantage" data-reveal aria-haspopup="dialog"
-            aria-label="View project: Vantage">
-            <div class="project-cover">
-              <img src="./images/ExFlo.png" alt="Expense Flow">
-            </div>
-            <div class="project-info">
-              <div class="project-head">
-                <h3>Expense Flow</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <p class="project-tagline">Track, organize, and manage your expenses with a simple, modern interface designed to give you better control over your finances.</p>
-              <div class="project-tags"><span>Frontend</span><span>UI/UX</span><span>Backend</span></div>
+              <p class="project-tagline">A sports information hub with an interactive chatbot for asking questions and
+                getting instant answers.</p>
+              <div class="project-tags"><span>Python</span><span>Flask</span><span>Chat Bot</span></div>
               <span class="project-link">View project →</span>
             </div>
           </button>
 
         </div>
 
-        <div class="work-more" data-reveal>
-          <p>More projects are always in progress — check back soon, or ask and I'll walk you through what I'm building.
-          </p>
+        <!-- ---------- CASE STUDY ---------- -->
+        <article class="case" id="case-study" data-reveal>
+          <span class="eyebrow">Case study — VANTA</span>
+          <h3>Building a premium streetwear store from scratch</h3>
+          <p class="case-intro">Streetwear shoppers judge a brand in seconds. The goal was a store that feels premium,
+            loads quickly, takes a customer from browsing to checkout without friction — and gives the owner full
+            control
+            over products and orders.</p>
+
+          <div class="case-grid">
+            <div class="case-card">
+              <span class="case-label">What I built</span>
+              <ul class="case-list">
+                <li>Responsive storefront with collections &amp; product variants</li>
+                <li>Customer accounts and wishlist</li>
+                <li>Cart and checkout flow</li>
+                <li>Order management</li>
+                <li>A complete admin dashboard</li>
+              </ul>
+            </div>
+            <div class="case-card">
+              <span class="case-label">My role</span>
+              <p>Designed and developed the whole thing: UI design, database structure, backend logic and front-end
+                interactions.</p>
+            </div>
+            <div class="case-card">
+              <span class="case-label">Built with</span>
+              <div class="project-tags">
+                <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>XAMPP</span><span>Composer</span><span>Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-actions">
+            <a href="https://vanta.xo.je/?i=1" target="_blank" rel="noopener" class="btn btn-primary">Visit the live
+              store ↗</a>
+            <a href="https://github.com/SyedMustafa1101/VANTA-E-Commerce-Store.git" target="_blank" rel="noopener"
+              class="btn btn-ghost">View the code ↗</a>
+          </div>
+        </article>
+
+        <!-- ---------- ACADEMIC WORK (de-emphasised) ---------- -->
+        <details class="academic" data-reveal>
+          <summary>Academic &amp; learning projects</summary>
+          <ul>
+            <li>
+              <div>
+                <strong>Smart Super Market Management System</strong>
+                <span>Java, JavaFX, MySQL, JDBC — desktop inventory &amp; sales app (Group Lead).</span>
+              </div>
+              <a href="https://github.com/SyedMustafa1101/Smart-Super-Market-Management-System.git" target="_blank"
+                rel="noopener">Code ↗</a>
+            </li>
+            <li>
+              <div>
+                <strong>Smart Airport Management System</strong>
+                <span>Java Swing — simulates operations with FCFS, SJF, Priority &amp; Round Robin scheduling (Team
+                  Lead).</span>
+              </div>
+              <a href="https://github.com/SyedMustafa1101/Smart-Airport-Management-System.git" target="_blank"
+                rel="noopener">Code ↗</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SERVICES — clear offers, no guessing what to hire me for
+       EDIT: delivery times are estimates; adjust to what you can promise
+       ============================================================ -->
+    <section id="services" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">( 02 ) — Services</span>
+          <h2 data-reveal>Three ways we can work together.</h2>
+          <p data-reveal>Pick the closest fit. Not sure? Send a message and I'll recommend the simplest option that
+            meets your goal.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-reveal>
+            <span class="skill-index">01</span>
+            <h3>Landing Page</h3>
+            <p>One focused page that explains your offer and gets enquiries — ideal for a launch, campaign or ad.</p>
+            <ul class="service-list">
+              <li>Custom responsive design</li>
+              <li>Contact form or WhatsApp button</li>
+              <li>Speed &amp; basic SEO setup</li>
+            </ul>
+            <span class="service-meta">Typical delivery · 3–5 days</span>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <span class="skill-index">02</span>
+            <h3>Business Website</h3>
+            <p>A complete 3–6 page site that builds trust and makes it easy for customers to contact or book you.</p>
+            <ul class="service-list">
+              <li>Design preview in Figma before building</li>
+              <li>Home, About, Services, Contact &amp; more</li>
+              <li>Mobile-first, fast, SEO-ready</li>
+            </ul>
+            <span class="service-meta">Typical delivery · 1–2 weeks</span>
+          </div>
+
+          <div class="service-card service-card--highlight" data-reveal>
+            <span class="skill-index">03 · As seen in VANTA</span>
+            <h3>E-commerce Store</h3>
+            <p>A full online store where customers browse, add to cart and check out — and you manage everything
+              yourself.</p>
+            <ul class="service-list">
+              <li>Products, collections &amp; variants</li>
+              <li>Cart, checkout &amp; order management</li>
+              <li>Admin dashboard to run the store</li>
+            </ul>
+            <span class="service-meta">Typical delivery · 3–5 weeks</span>
+          </div>
+        </div>
+
+        <div class="launch-note" data-reveal>
+          <strong>Launch offer:</strong> I'm taking on 2 projects at a reduced rate in exchange for an honest
+          testimonial and permission to feature the work. <a href="#contact">Claim a spot →</a>
+        </div>
+
+        <!-- PROCESS -->
+        <div class="process" data-reveal>
+          <span class="tools-label">How it works</span>
+          <ol class="process-grid">
+            <li><span class="step-num">1</span>
+              <h4>Free review</h4>
+              <p>Tell me about your business. I reply within 24 hours with ideas and a clear quote.</p>
+            </li>
+            <li><span class="step-num">2</span>
+              <h4>Design preview</h4>
+              <p>You see the look in Figma before any code is written.</p>
+            </li>
+            <li><span class="step-num">3</span>
+              <h4>Build &amp; revise</h4>
+              <p>I build it, you give feedback, and we refine it together.</p>
+            </li>
+            <li><span class="step-num">4</span>
+              <h4>Launch &amp; support</h4>
+              <p>Your site goes live, and I'm around for fixes and updates.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="tools-row" data-reveal>
+          <span class="tools-label">Tools &amp; languages I use</span>
+          <div class="tools-chips">
+            <span>Figma</span><span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Java</span><span>Python</span><span>Webflow</span><span>Framer</span><span>Bootstrap</span><span>Tailwind
+              CSS</span><span>Git &amp; GitHub</span><span>Canva</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-       ABOUT — EDIT: ABOUT — no experience/timeline section, as
-       requested. Add one later by copying the pattern used in
-       the Work section above (an eyebrow + heading + a repeating
-       block per item).
+       ABOUT
        ============================================================ -->
     <section id="about" class="section-pad">
       <div class="container about-grid">
@@ -271,96 +365,56 @@
           </div>
         </div>
         <div class="about-copy">
-          <span class="eyebrow">( 02 ) — About</span>
-          <h2 data-reveal style="margin-bottom:1.4rem;">A bit about me.</h2>
-          <p data-reveal>I'm a Software Engineering student passionate about building modern, responsive, and
-            user-friendly digital experiences. I enjoy turning ideas into functional websites and applications using modern technologies, while also creating clean and engaging
-            designs with Figma and Canva.
-
-            Through academic and personal projects, I've developed a strong foundation in Full-Stack Development, UI
-            designs, and problem-solving. I'm constantly learning new technologies, refining my skills, and exploring
-            best practices to write clean, efficient, and maintainable code.
-          </p>
-          <p data-reveal>I am open to professional collaborations and freelance projects where I can bring my skills to real-world challenges and deliver meaningful results.</p>
+          <span class="eyebrow">( 03 ) — About</span>
+          <h2 data-reveal style="margin-bottom:1.4rem;">Hi, I'm Mustafa.</h2>
+          <p data-reveal>I'm a web designer and full-stack developer (and a Software Engineering student) who enjoys
+            turning ideas into fast, good-looking websites and online stores. I handle both sides — the design in Figma
+            and the code behind it — so you work with one person from first sketch to launch.</p>
+          <p data-reveal>My focus is on fashion and lifestyle brands and small businesses that want a site that feels
+            premium, works perfectly on phones, and is simple to manage. I keep communication clear, deadlines
+            realistic, and you're never left guessing what's happening with your project.</p>
           <div class="about-stats" data-reveal>
             <div>
               <span class="stat-num">15+</span>
               <span class="stat-label">Projects built</span>
             </div>
             <div>
-              <span class="stat-num">20+</span>
-              <span class="stat-label">Core tools &amp; languages</span>
+              <span class="stat-num">&lt;24h</span>
+              <span class="stat-label">Reply time on every enquiry</span>
+            </div>
+          </div>
+          <div class="about-cta" data-reveal>
+            <a href="Syed Mustafa Ahmad CV.pdf" target="_blank" rel="noopener" download class="btn btn-ghost">Download
+              my CV</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-       SKILLS — EDIT: SKILL
-       ============================================================ -->
-    <section id="skills" class="section-pad">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">( 03 ) — Skills</span>
-          <h2 data-reveal>What I bring to the table.</h2>
-          <p data-reveal>Real, practiced skills from building things that didn't
-            exist before I made them.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card" data-reveal>
-            <span class="skill-index">01</span>
-            <h3>UI/UX Design</h3>
-            <p>Wireframes, user flows, and interfaces built around how people actually behave — not just how they look
-              in a mockup.</p>
-          </div>
-          <div class="skill-card" data-reveal>
-            <span class="skill-index">02</span>
-            <h3>Front-End Development</h3>
-            <p>Turning a design file into real, responsive code — HTML, CSS, JavaScript, and React.</p>
-          </div>
-          <div class="skill-card" data-reveal>
-            <span class="skill-index">03</span>
-            <h3>Design Systems</h3>
-            <p>Reusable components and clear rules, so a product can scale without losing consistency.</p>
-          </div>
-          <div class="skill-card" data-reveal>
-            <span class="skill-index">04</span>
-            <h3>Rapid Prototyping</h3>
-            <p>Getting from a rough idea to something clickable and testable — quickly.</p>
-          </div>
-        </div>
-
-        <div class="tools-row" data-reveal>
-          <span class="tools-label">Tools &amp; languages I reach for</span>
-          <div class="tools-chips">
-            <span>Figma</span><span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>Canva</span><span>Webflow</span><span>Framer</span><span>Git &amp;
-              GitHub</span><span>Notion</span><span>Bootstrap</span><span>MySQL</span><span>XAMPP</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-       CONTACT — EDIT: CONTACT — your real email + social links
+       CONTACT
        ============================================================ -->
     <section id="contact" class="section-pad">
       <div class="container contact-grid">
         <div class="contact-copy">
           <span class="eyebrow">( 04 ) — Contact</span>
-          <h2 data-reveal>Let's build something worth shipping.</h2>
-          <p data-reveal>If you think we'd work
-            well together, send a message — I'd love to hear from you.</p>
+          <h2 data-reveal>Let's talk about your website.</h2>
+          <p data-reveal>Tell me what you're building. I'll reply within 24 hours with ideas and a clear quote — a free
+            homepage review is included.</p>
           <p class="contact-direct" data-reveal>Prefer email? Reach me directly at <a
               href="mailto:syedmustafaahmad786@gmail.com">syedmustafaahmad786@gmail.com</a></p>
+          <!-- EDIT: add your WhatsApp number (digits only, with country code) and uncomment:
+          <p class="contact-direct"><a href="https://wa.me/92XXXXXXXXXX" target="_blank" rel="noopener">Message me on WhatsApp ↗</a></p>
+          -->
           <div class="social-row" data-reveal>
-            <a href="https://github.com/SyedMustafa1101" target="_blank" > GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/syed-mustafa-74a796333?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank ">LinkedIn ↗</a>
+            <a href="https://github.com/SyedMustafa1101" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/syed-mustafa-74a796333" target="_blank" rel="noopener">LinkedIn ↗</a>
           </div>
         </div>
 
-        <form class="contact-form" action="https://formsubmit.co/syedmustafaahmad786@gmail.com" method="POST" data-reveal>
-          <input type="hidden" name="_subject" value="New portfolio contact form message" />
+        <form class="contact-form" action="https://formsubmit.co/syedmustafaahmad786@gmail.com" method="POST"
+          data-reveal>
+          <input type="hidden" name="_subject" value="New portfolio enquiry" />
           <input type="hidden" name="_captcha" value="true" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_next" value="https://syedmustafa1101.github.io/Portfolio/#contact" />
@@ -374,10 +428,22 @@
             <input type="email" id="cEmail" name="email" required autocomplete="email" />
           </div>
           <div class="field">
-            <label for="cMessage">Message</label>
+            <label for="cType">What do you need?</label>
+            <select id="cType" name="project_type" required>
+              <option value="" disabled selected>Choose one…</option>
+              <option>Landing page</option>
+              <option>Business website</option>
+              <option>E-commerce store</option>
+              <option>Redesign of my current site</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cMessage">Tell me about your project</label>
             <textarea id="cMessage" name="message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p class="form-note">I reply within 24 hours.</p>
         </form>
       </div>
     </section>
@@ -392,12 +458,12 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="nav-logo">Syed Mustafa Ahmad</a>
-          <p>Frontend Developer &amp; Designer</p>
+          <p>Web Designer &amp; Developer</p>
         </div>
         <nav class="footer-links" aria-label="Footer">
           <a href="#work">Work</a>
+          <a href="#services">Services</a>
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -431,18 +497,17 @@
         </div>
         <div class="project-tags" id="modalTags"></div>
         <div class="modal-actions" id="modalActions">
+          <a href="#" class="btn btn-primary" id="modalLiveBtn" target="_blank" rel="noopener">Live demo ↗</a>
           <a href="#" class="btn btn-ghost" id="modalGithubBtn" target="_blank" rel="noopener">View on GitHub ↗</a>
+          <button type="button" class="btn btn-ghost" id="modalScreenshotBtn">View screenshot</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================
-     SCREENSHOT LIGHTBOX — opens on top of the project modal to
-     show that project's cover image at full size
-     ============================================================ -->
-  <div class="lightbox-overlay" id="screenshotLightbox" role="dialog" aria-modal="true"
-    aria-label="Project screenshot" hidden>
+  <!-- SCREENSHOT LIGHTBOX -->
+  <div class="lightbox-overlay" id="screenshotLightbox" role="dialog" aria-modal="true" aria-label="Project screenshot"
+    hidden>
     <button class="modal-close" id="lightboxClose" aria-label="Close screenshot">✕</button>
     <div class="lightbox-frame" id="lightboxFrame"></div>
   </div>
@@ -454,7 +519,7 @@
     const nav = document.getElementById('siteNav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
-    }, { passive: true });
+    }, {passive: true});
 
     // ============================================================
     // MOBILE MENU
@@ -476,8 +541,7 @@
     }));
 
     // ============================================================
-    // THEME TOGGLE — light/dark (session only; artifacts can't use
-    // localStorage, so this resets on reload — that's expected)
+    // THEME TOGGLE — light/dark (resets on reload)
     // ============================================================
     const themeToggle = document.getElementById('themeToggle');
     const root = document.documentElement;
@@ -499,7 +563,7 @@
             io.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+      }, {threshold: 0.15, rootMargin: '0px 0px -60px 0px'});
       revealEls.forEach(el => io.observe(el));
     } else {
       revealEls.forEach(el => el.classList.add('in-view'));
@@ -507,44 +571,30 @@
 
     // ============================================================
     // PROJECT MODAL — EDIT: PROJECT DATA
-    // Add/remove entries here to match the cards in the Work
-    // section above. Each key must match that card's
-    // data-project="..." attribute.
+    // Each key must match a card's data-project="..." attribute.
+    // Leave `live` or `github` as '' and that button hides itself.
     // ============================================================
-    // Add your real GitHub repo link here as you get each one live —
-    // leave it as '' and the "View on GitHub" button hides itself
-    // instead of showing a dead link. "View screenshot" always works,
-    // since it just opens the cover image you already see on the card.
     const projects = {
-      lumen: {
+      vanta: {
         role: 'Full-Stack Developer & Project Designer',
         tools: 'VS Code, XAMPP, Git, GitHub, phpMyAdmin, Composer',
         description: "VANTA is a full-stack streetwear e-commerce platform featuring a modern, responsive storefront, product collections and variants, customer accounts, wishlist, cart and checkout, order management, and a complete admin dashboard. Built with PHP, MySQL, JavaScript, HTML, and CSS, with a strong focus on immersive UI, smooth interactions, and real-world e-commerce functionality.",
+        live: 'https://vanta.xo.je/?i=1',
         github: 'https://github.com/SyedMustafa1101/VANTA-E-Commerce-Store.git'
       },
-      kestrel: {
-        role: 'Group Lead & Full-Stack Developer',
-        tools: 'Java, JavaFX, FXML, MySQL, JDBC, Maven, NetBeans',
-        description: "A database-driven supermarket management system built to simplify product management, inventory tracking, sales, and day-to-day operations. As the group leader, I handled the core development, database design, system architecture, and implementation, turning the project requirements into a functional desktop application with a structured MySQL database.",
-        github: 'https://github.com/SyedMustafa1101/Smart-Super-Market-Management-System.git'
-      },
-      fathom: {
-        role: 'Team Lead & Java Developer',
-        tools: 'Java, NetBeans, Java Swing',
-        description: "An academic Java-based Smart Airport Management System developed for the Operating Systems course according to the instructor’s given requirements. The project simulates airport operations while implementing multiple CPU scheduling algorithms, including FCFS, SJF, Priority Scheduling, and Round Robin, demonstrating practical concepts of process scheduling and resource management.",
-        github: 'https://github.com/SyedMustafa1101/Smart-Airport-Management-System.git'
-      },
-      monarch: {
-        role: 'Team Lead & Chat Bot Developer',
-        tools: 'Python, Flask, Bootstrap, Figma, Git, GitHub, VS Code',
-        description: "Sports Info With Chat Bot is a web-based sports information application that combines sports-related information with an integrated chatbot. Built with Python, Flask, and web technologies, the project demonstrates practical skills in web development, backend programming, chatbot integration, API/data handling, and user interface design.",
-        github: 'https://github.com/SyedMustafa1101/Sports-Info-With-Chat-Bot.git'
-      },
-      vantage: {
+      expenseflow: {
         role: 'Solo Developer',
         tools: 'HTML5, Tailwind CSS, JavaScript, npm, VS Code, Git, GitHub',
         description: "Expense Flow is a modern and responsive expense management web application built with HTML, Tailwind CSS, JavaScript and JSON. It features a clean and intuitive interface for managing expenses and was developed as a hands-on project to enhance and polish my frontend development skills.",
+        live: '',
         github: 'https://github.com/SyedMustafa1101/Expense-Flow.git'
+      },
+      sportsinfo: {
+        role: 'Team Lead & Chat Bot Developer',
+        tools: 'Python, Flask, Bootstrap, Figma, Git, GitHub, VS Code',
+        description: "Sports Info With Chat Bot is a web-based sports information application that combines sports-related information with an integrated chatbot. Built with Python, Flask, and web technologies, the project demonstrates practical skills in web development, backend programming, chatbot integration, API/data handling, and user interface design.",
+        live: '',
+        github: 'https://github.com/SyedMustafa1101/Sports-Info-With-Chat-Bot.git'
       }
     };
 
@@ -552,6 +602,7 @@
     const modalClose = document.getElementById('modalClose');
     const modalScreenshotBtn = document.getElementById('modalScreenshotBtn');
     const modalGithubBtn = document.getElementById('modalGithubBtn');
+    const modalLiveBtn = document.getElementById('modalLiveBtn');
     const lightbox = document.getElementById('screenshotLightbox');
     const lightboxClose = document.getElementById('lightboxClose');
     const lightboxFrame = document.getElementById('lightboxFrame');
@@ -571,6 +622,8 @@
 
       modalGithubBtn.href = data.github || '#';
       modalGithubBtn.style.display = data.github ? '' : 'none';
+      modalLiveBtn.href = data.live || '#';
+      modalLiveBtn.style.display = data.live ? '' : 'none';
 
       lastFocused = document.activeElement;
       modal.hidden = false;
@@ -586,11 +639,9 @@
       card.addEventListener('click', () => openModal(card));
     });
     modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    modal.addEventListener('click', (e) => {if (e.target === modal) closeModal();});
 
-    // Screenshot lightbox — reuses whatever is already showing in the
-    // modal's cover strip, just larger. Sits on top of the project
-    // modal rather than replacing it.
+    // Screenshot lightbox — shows the modal's cover image larger
     function openLightbox() {
       lightboxFrame.innerHTML = document.getElementById('modalCover').innerHTML;
       lightbox.hidden = false;
@@ -602,21 +653,13 @@
     }
     modalScreenshotBtn.addEventListener('click', openLightbox);
     lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    lightbox.addEventListener('click', (e) => {if (e.target === lightbox) closeLightbox();});
 
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
-      if (!lightbox.hidden) { closeLightbox(); return; }
+      if (!lightbox.hidden) {closeLightbox(); return;}
       if (!modal.hidden) closeModal();
     });
-
-    // ============================================================
-    // CONTACT FORM — submitted securely through FormSubmit.
-    // No visitor email app is required.
-    // ============================================================
-    // The form action above sends submissions to:
-    // syedmustafaahmad@gmail.com
-    // ============================================================
 
     // ============================================================
     // FOOTER YEAR
