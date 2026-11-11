@@ -1672,3 +1672,182 @@ footer {
     justify-content: center;
   }
 }
+
+/* ============================================================
+     FORM STATUS + HONEYPOT
+     ============================================================ */
+.honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn:disabled {
+  opacity: .6;
+  cursor: progress;
+  transform: none;
+}
+
+.form-status {
+  margin-top: 1rem;
+  font-size: .92rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status.ok {
+  color: #2E7D32;
+}
+
+.form-status.err {
+  color: #C62828;
+}
+
+[data-theme="dark"] .form-status.ok {
+  color: #81C784;
+}
+
+[data-theme="dark"] .form-status.err {
+  color: #EF9A9A;
+}
+
+/* ============================================================
+     FLOATING WHATSAPP BUTTON (label slides out on hover/focus)
+     ============================================================ */
+.wa-float {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.8rem);
+  bottom: clamp(1rem, 3vw, 1.8rem);
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0;
+  background: #25D366;
+  color: #fff;
+  height: 58px;
+  border-radius: 100px;
+  box-shadow: 0 12px 28px -10px rgba(37, 211, 102, .65), 0 4px 10px rgba(0, 0, 0, .15);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease);
+}
+
+.wa-icon {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.wa-label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: .92rem;
+  opacity: 0;
+  transition: max-width .4s var(--ease), opacity .3s var(--ease), padding .4s var(--ease);
+  box-sizing: content-box;
+}
+
+.wa-float:hover,
+.wa-float:focus-visible {
+  background: #1EBE5A;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px -10px rgba(37, 211, 102, .75), 0 4px 12px rgba(0, 0, 0, .18);
+}
+
+.wa-float:hover .wa-label,
+.wa-float:focus-visible .wa-label {
+  max-width: 200px;
+  opacity: 1;
+  padding-right: 1.4rem;
+}
+
+/* gentle attention pulse on the icon, off for reduced motion */
+.wa-float::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  box-shadow: 0 0 0 0 rgba(37, 211, 102, .5);
+  animation: waPulse 2.8s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes waPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, .45); }
+  70%, 100% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float::after {
+    animation: none;
+  }
+}
+
+/* keep it clear of the open project modal / mobile menu */
+.mobile-menu.is-open ~ .wa-float {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .wa-float,
+  .wa-icon {
+    height: 54px;
+  }
+
+  .wa-icon {
+    width: 54px;
+  }
+}
+
+/* ---- Form failure fallback ---- */
+.btn-sm {
+  padding: .6rem 1.1rem;
+  font-size: .85rem;
+}
+
+.form-fallback {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: .8rem;
+}
+
+.form-fallback .btn {
+  color: var(--ink);
+}
+
+.form-detail {
+  display: block;
+  margin-top: .8rem;
+  font-size: .74rem;
+  color: var(--ink-45);
+  word-break: break-word;
+}
+
+/* ---- Small phones: keep the header on one line ---- */
+@media (max-width: 520px) {
+  .nav-right > .btn {
+    display: none;
+  }
+
+  .nav-logo {
+    white-space: nowrap;
+  }
+}
